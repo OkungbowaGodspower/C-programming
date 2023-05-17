@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int num, x, y;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for(x = 1; x < 11; x++)
+    {
+        y = num * x;
+        printf("%d * %d = %d \n",num, x, y);
+    }
+
+    puts("\t");
+
+    int i = 1;
+    while(i <= 10)
+    {
+        y = num + i;
+        printf("%d + %d = %d \n",num, i, y);
+        i++;
+    }
+
+    puts("\t");
+
+    int k = 1;
+    do{
+        y = num - k;
+        printf("%d - %d = %d \n",num, k, y);
+        k++;
+    } while(k <= 10);
+
+    return 0;
+}
